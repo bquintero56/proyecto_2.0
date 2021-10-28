@@ -1,0 +1,22 @@
+<div class="card text-center" style="width: 18rem;">
+    <!-- <img src="..." class="card-img-top" alt="..."> -->
+    <div class="card-body">
+        <h5 class="card-title">{{ nombre}}</h5>
+        <!-- <p class="card-text" [ngSwitch]= "genero">
+            {{ email }}
+            <br>
+            <span *ngSwitchCase="'male'" class="badge bg-dark">
+                {{ genero }}
+            </span>
+            <span *ngSwitchCase="'female'" class="badge bg-primary"> 
+                {{ genero }}
+            </span>
+            <span *ngSwitchDefault class="badge bg-warning">
+                Otro
+            </span>  
+        </p> -->
+        <!-- -------------------------------------------------------------------- -->
+        <!-- <button routerLink = "usuario/{{ this.id}}">Detalles</button> -->
+        <button class="btn btn-primary" (click)="verDetalles()">Detalles</button>
+    </div>
+</div>

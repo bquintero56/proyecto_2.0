@@ -1,0 +1,10 @@
+<app-spinner *ngIf="cargando"></app-spinner>
+<div class="row gx-5 gy-2 mt-2 mb-2">
+  <div *ngFor="let usuario of listaUsuarios" class="col-md-3">
+    <app-card [user]="usuario"></app-card>
+  </div>
+  <div class="mt-2 mb-4 text-center">
+    <span class="btn btn-primary" (click)="paginaAnterior()" *ngIf="paginaActual !== 1">Anterior</span>
+    {{ paginaActual }}/{{ totalPaginas }}
+    <span class="btn btn-primary" (click)="paginaSiguiente()" *ngIf="paginaActual != totalPaginas ">Siguiente</span>
+  </div>
